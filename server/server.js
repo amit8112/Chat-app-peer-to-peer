@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
+require('dotenv').config(); // Load environment variables from .env file
 const app = express();
+
 const PORT = process.env.PORT || 3001; // Use any port you prefer
 
 // Serve static files from the 'build' folder
